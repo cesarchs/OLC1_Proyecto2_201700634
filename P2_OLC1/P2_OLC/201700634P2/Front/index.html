@@ -11,95 +11,32 @@
     <script type="text/javascript" src="layout/js/bootstrapjs/bootstrap.min.js"></script>
 </head>
 
-<body>
-    <!----------------------------------------BARRA DE NAVEGACION--------------------------------------------->
-    <div class="menu" >
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
-            <a class="navbar-brand">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bug-fill" fill="green"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" />
-                </svg>
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"> OPCIONES
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item">
-                                <label>
-                                    OPEN <input type="file" id="files" style="display: none;" accept=".java" />
-                                </label>
-                            </a>
-                            <a class="dropdown-item">
-                                <label>
-                                    DOWLOAD <input type="button" name="downloadFile" style="display: none;" />
-                                </label>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"> DOWLOAD
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item">
-                                <label>
-                                    JS<input type="button" name="downloadJavascript"
-                                        style="display: none;" />
-                                </label>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <!-- <a class="nav-link" id="" aria-haspopup="false" aria-expanded="false"> -->
-                            
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <h2> Carnet: 201700634</h2>
-    <!----------------------------------------BARRA DE NAVEGACION--------------------------------------------->
-    <!---------------------------------------------EDITOR----------------------------------------------------->
-    <div class="editor">
-        <div class="editor__wrapper">
-            <div class="editor__body">
+<body> <div class="menu" >     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >         <a class="navbar-brand">             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bug-fill" fill="green"                 xmlns="http://www.w3.org/2000/svg">                 <path fill-rule="evenodd" />             </svg>         </a>         <div class="collapse navbar-collapse" id="navbarNavDropdown">             <ul class="navbar-nav">                 <li class="nav-item dropdown">                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"                         aria-haspopup="true" aria-expanded="false"> OPCIONES                     </a>                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">                         <a class="dropdown-item">                             <label>                                 OPEN <input type="file" id="files" style="display: none;" accept=".java" />                             </label>                         </a>                         <a class="dropdown-item">                             <label>                                 DOWLOAD <input type="button" name="downloadFile" style="display: none;" />                             </label>                         </a>                     </div>                 </li>                 <li class="nav-item dropdown">                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"                         aria-haspopup="true" aria-expanded="false"> DOWLOAD                     </a>                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">                         <a class="dropdown-item">                             <label>                                 JS<input type="button" name="downloadJavascript"                                     style="display: none;" />                             </label>                         </a>                     </div>                 </li>                 <li>                     <!-- <a class="nav-link" id="" aria-haspopup="false" aria-expanded="false"> -->                                              </a>                 </li>             </ul>         </div>     </nav> </div> <h2> Carnet: 201700634</h2> <!----------------------------------------BARRA DE NAVEGACION---------------------------------------------> <!---------------------------------------------EDITOR-----------------------------------------------------> <div class="editor">     <div class="editor__wrapper">         <div class="editor__body">
                 <div id="editorCode" class="editor__code"></div>
-            </div>
-            <div class="editor__consoles">
-                <h4>ERRORES JS</h4>
-                <div class="editor__console1">
-                    <ul class="editor__console-logs1"></ul>
-                </div>
-                <h4>ERRORES PYTHON</h4>
-                <div class="editor__console2">
-                    <ul class="editor__console-logs2"></ul>
+            </div>        <div class="editor__consoles">            <h4>ERRORES JS</h4>            <div class="editor__console1">                <ul class="editor__console-logs1"></ul>            </div>            <h4>ERRORES PYTHON</h4>            <div class="editor__console2">                <ul class="editor__console-logs2"></ul>
                 </div>
             </div>
         </div>
         <div class="editor__footer">
             <div class="editor__footer--btn">
-                <!--<button type="button" class="editor__btn editor__run">Run ></button>-->
                 <button type="button" class="btn btn-dark editor__run"> TRANSLATE </button>
             </div>
         </div>
     </div>
-    <!---------------------------------------------EDITOR----------------------------------------------------->
-    <!----------------------------------------TABLA DE ERRORES------------------------------------------------>
+
+    
+
+
     <div class="table-responsive rounded bg-info">
         <h5 style="color: rgb(23, 20, 220);">TABLA DE ERRORES</h5>
         <table class="table tableError" id="tablaErrores" style="color:white;">
             <thead>
                 <tr>
-                    <th style="width:5%">Numero</th>
-                    <th style="width:20%">lexema</th>
-                    <th style="width:20%">Tipo error</th>
-                    <th style="width:40%">Descripción</th>
-                    <th style="width:5%">Fila</th>
+        <th style="width:5%">Numero</th>
+        <th style="width:20%">lexema</th>
+        <th style="width:20%">Tipo error</th>
+        <th style="width:40%">Descripción</th>
+        <th style="width:5%">Fila</th>
                     <th style="width:5%">Columna</th>
                 </tr>
             </thead>
@@ -108,42 +45,57 @@
             </tbody>
         </table>
     </div>
-    <!----------------------------------------TABLA DE ERRORES------------------------------------------------>
-    <!-----------------------------------------TABLA DE TOKENS------------------------------------------------>
+
+
+
+
     <div class="table-responsive rounded bg-success">
         <h5 style="color: rgb(217, 255, 0);">TABLA DE TOKENS</h5>
         <table class="table tableToken" id="tablaTokens" style="color:white;">
             <thead>
-                <tr>
-                    <th style="width:10%">Numero.</th>
-                    <th style="width:40%">Token</th>
-                    <th style="width:30%">tipo</th>
-                    <th style="width:10%">Fila</th>
-                    <th style="width:10%">Columna</th>
-                </tr>
-            </thead>
+           <tr>
+      <th style="width:10%">Numero.</th>
+      <th style="width:40%">Token</th>
+      <th style="width:30%">tipo</th>
+      <th style="width:10%">Fila</th>
+      <th style="width:10%">Columna</th>
+           </tr>
+       </thead>
             <tbody>
 
             </tbody>
         </table>
     </div>
-    <!-----------------------------------------TABLA DE TOKENS------------------------------------------------>
+
+
+
 
     <div id="graph" style="text-align: center;">
         <h5 style="color: rgb(47, 0, 255);">ARBOL DE SINTAXIS ABSTRACTA</h5>
     </div>
 
-    <!-- Required d3-Graphviz -->
-    <script src="//d3js.org/d3.v5.min.js"></script>
-    <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script>
-    <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
-    <!-- Required Ace Libraries -->
-    <script src="layout/js/ace-editor/src-min/ace.js"></script>
-    <script src="layout/js/ace-editor/src-min/mode-java.js"></script>
-    <script src="layout/js/ace-editor/src-min/ext-language_tools.js"></script>
-    <!-- Custom Scripts -->
-    <script src="layout/js/editor.js"></script>
-    <script src="layout/js/main.js"></script>
+
+
+
+<script src="//d3js.org/d3.v5.min.js"></script>
+<script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script>
+<script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+
+
+
+
+
+<script src="layout/js/ace-editor/src-min/ace.js"></script>
+<script src="layout/js/ace-editor/src-min/mode-java.js"></script>
+<script src="layout/js/ace-editor/src-min/ext-language_tools.js"></script>
+
+
+
+
+
+
+<script src="layout/js/editor.js"></script>
+<script src="layout/js/main.js"></script>
 </body>
 
 </html>
